@@ -13,6 +13,6 @@ class HomeController extends Controller
         $today = Date::now()->format('Y-m-d');
         $trains = Train::where('orario_partenza', $today)-> get();
 
-        return view('welcome', compact('trains'));
+        return view('home', compact('trains'));
     }
 }

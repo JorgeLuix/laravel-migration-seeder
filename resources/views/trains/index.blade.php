@@ -4,7 +4,7 @@
 
 <main>
 <h1>Lista Treni:</h1>
-{{-- <a href="{{ route('welcome') }} "></a> --}}
+{{-- <a href="{{ route('home') }} "></a> --}}
 
 <table>
     <thead>
