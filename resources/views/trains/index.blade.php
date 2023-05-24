@@ -3,8 +3,8 @@
 @section('content')
 
 <main>
-<h1>Treni in partenza oggi:</h1>
-{{-- <a href="{{route('trains.index')}} "></a> --}}
+<h1>Lista Treni:</h1>
+{{-- <a href="{{ route('welcome') }} "></a> --}}
 
 <table>
     <thead>
@@ -38,3 +38,4 @@
 </main>
 
 @endsection
+
