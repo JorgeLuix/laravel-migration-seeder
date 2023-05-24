@@ -4,18 +4,18 @@
 
 <main>
 <h1>Lista Treni:</h1>
-{{-- <a href="{{ route('home') }} "></a> --}}
+<a href="{{ route('home') }} "> Treni oggi</a>
 
-<table>
+<table class="table">
     <thead>
         <tr>
-            <th>Azienda</th>
-            <th>Stazione di Partenza</th>
-            <th>Stazione di Arrivo</th>
-            <th>Orario di Partenza</th>
-            <th>Orario di Arrivo</th>
-            <th>Codice treno</th>
-            <th>Numero Carrozze</th>
+            <th scope="col">Azienda</th>
+            <th scope="col">Stazione di Partenza</th>
+            <th scope="col">Stazione di Arrivo</th>
+            <th scope="col">Orario di Partenza</th>
+            <th scope="col">Orario di Arrivo</th>
+            <th scope="col">Codice treno</th>
+            <th scope="col">Numero Carrozze</th>
         </tr>
     </thead>
 
@@ -23,7 +23,7 @@
         @foreach ($trains as $train )
 
         <tr>
-            <td>{{ $train->azienda }}</td>
+            <td scope="row">{{ $train->azienda }}</td>
             <td>{{$train->stazione_partenza}}</td>
             <td>{{$train->stazione_arrivo}}</td>
             <td>{{$train->orario_partenza}}</td>

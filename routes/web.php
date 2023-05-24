@@ -20,5 +20,5 @@ Route::get('/', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-//Route::get('/', [TrainController::class, 'index'])->name('trains.index');
+Route::get('/trains', [TrainController::class, 'index'])->name('trains.index');
 
