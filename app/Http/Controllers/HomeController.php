@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index(){
         $today = Date::now()->format('Y-m-d');
-        $trains = Train::where('orario_partenza', $today)-> get();
+        $trains = Train::where('orario_partenza', '>=', $today)-> get();
 
         return view('home', compact('trains'));
     }
